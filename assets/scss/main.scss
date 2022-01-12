@@ -1,3 +1,4 @@
+// CSS Reset
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -20,4 +21,75 @@ ol, ul {
 img {
   max-width: 100%;
   height: auto;
+}
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap');
+
+// Colors
+$white: #FCFAF9;
+$black: #191826;
+$cyan: #66E2DC;
+$orange: #FA7453;
+$lightorange: #FFB964;
+
+// Typography
+
+body {
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+h1 {
+  font-size: 88px;
+  line-height: 88px;
+  letter-spacing: -1px;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 52px;
+}
+
+.body1 {
+  font-size: 20px;
+  line-height: 34px;
+  font-weight: 400;
+}
+
+.body2 {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+// Buttons
+
+.button {
+  width: 333px;
+  height: 61px;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -0.18px;
+  transition: all 500ms ease-in-out;
+}
+
+.button-android {
+  background-color: $white;
+  color: $black;
+}
+.button-android:hover {
+  background-color: $orange;
+}
+.button-ios {
+  background-color: $black;
+  color: $white;
+}
+.button-ios:hover {
+  background-color: $cyan;
 }
