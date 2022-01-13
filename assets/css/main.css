@@ -4,17 +4,29 @@ html {
   font-size: 16px;
 }
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
 
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
@@ -53,6 +65,9 @@ h2 {
 }
 
 .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 333px;
   height: 61px;
   border-radius: 12px;
@@ -63,24 +78,161 @@ h2 {
   line-height: 32px;
   letter-spacing: -0.18px;
   transition: all 500ms ease-in-out;
-}
-
-.button-android {
-  background-color: #FCFAF9;
-  color: #191826;
-}
-
-.button-android:hover {
-  background-color: #FA7453;
+  cursor: pointer;
 }
 
 .button-ios {
   background-color: #191826;
   color: #FCFAF9;
 }
+.button-ios img {
+  margin-right: 7.92px;
+}
 
 .button-ios:hover {
   background-color: #66E2DC;
+}
+
+.button-android {
+  background-color: #FCFAF9;
+  color: #191826;
+  margin-top: 16px;
+  margin-bottom: 48px;
+}
+.button-android img {
+  margin-right: 7.8px;
+}
+
+.button-android:hover {
+  background-color: #FFB964;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.main__bg {
+  position: absolute;
+  z-index: -1;
+  top: -112px;
+  left: -146px;
+}
+
+.landing__wrapper {
+  position: relative;
+  max-width: 1440px;
+  padding: 0 165px;
+}
+
+.main__logo {
+  margin-top: 62px;
+  margin-bottom: 127px;
+}
+
+.hero__img {
+  position: absolute;
+  right: 0;
+  top: -40px;
+}
+
+.main__textbox {
+  width: 825px;
+  margin-top: 40px;
+}
+
+.main__content {
+  position: relative;
+  width: 1110px;
+  height: 600px;
+  margin-top: 321px;
+  margin-bottom: 202px;
+}
+
+.main__content__bg {
+  position: absolute;
+  z-index: -1;
+  background-color: #191826;
+  width: 1110px;
+  height: 600px;
+  border-radius: 12px;
+}
+
+.main__content__bg-svg {
+  z-index: -1;
+  position: absolute;
+  top: -40px;
+  left: 336px;
+}
+
+.phone__img {
+  position: absolute;
+  top: -213px;
+  left: 102px;
+  width: 312px;
+  height: 642px;
+}
+
+.landing__card {
+  position: absolute;
+  right: 95px;
+  top: 90px;
+  width: 446px;
+  height: 625px;
+  border-radius: 12px;
+  color: #FCFAF9;
+  background-color: #FA7453;
+  padding: 0 59px 0 54px;
+}
+
+.landing__card-heading {
+  padding-top: 58px;
+  margin-bottom: 22px;
+}
+
+.card_price {
+  display: flex;
+  align-items: center;
+  margin-top: 39px;
+  margin-bottom: 46px;
+}
+
+.price {
+  font-size: 65px;
+  line-height: 52px;
+  font-weight: 700;
+  margin-right: 16px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-bottom: 91px;
+}
+
+.footer_logo {
+  align-self: flex-start;
+}
+
+.footer__icons {
+  width: 100px;
+  height: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  fill: #191826;
+  transition: all 500ms ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover {
+  fill: #FA7453;
 }
 
 /*# sourceMappingURL=main.css.map */
